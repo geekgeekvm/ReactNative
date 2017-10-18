@@ -11,7 +11,7 @@ import {
 
 import ImagePicker from 'react-native-image-picker';
 
-export default class App extends React.Component {
+export default class Img extends React.Component {
 
   state = {
     avatarSource: null
@@ -68,13 +68,13 @@ export default class App extends React.Component {
 
 }
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    justifyContent: 'center',
-    alignItems: 'center',
-    backgroundColor: '#F5FCFF'
-  },
+var styles = StyleSheet.create({
+    container: {
+      justifyContent: 'center',
+      marginTop: 50,
+      padding: 20,
+      backgroundColor: '#ffffff',
+    },
   avatarContainer: {
     borderColor: '#9B9B9B',
     borderWidth: 1 / PixelRatio.get(),
@@ -87,3 +87,5 @@ const styles = StyleSheet.create({
     height: 150
   }
 });
+
+AppRegistry.registerComponent('Img', () => Img);
